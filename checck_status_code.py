@@ -11,6 +11,6 @@ with open("data_22_02.csv","r",encoding="utf8") as f:
             save.append([r[0],status_code])
         except:
             save.append([r[0],"000"])
-# with open("status_code.csv","w",encoding="utf8") as f:
-#     write=csv.writer(f)
-#     write.writerows(save)
+with open("status_code.csv","w",encoding="utf8",newline='') as f:
+    write=csv.writer(f)
+    write.writerows(save)

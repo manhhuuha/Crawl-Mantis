@@ -1,5 +1,7 @@
-import requests
-responses = requests.get("http://www.autonewschina.com/en/more.asp?c=68")
+import csv
+a = [[1,2,3],['a','b','c'],['x','y','z']]
 
-for response in responses.history:
-    print(response.url)
+with open("test.csv",'w',encoding='utf8',newline='') as f:
+    writer  = csv.writer(f)
+    for item in a:
+        writer.writerow(item)

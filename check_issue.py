@@ -42,6 +42,6 @@ check_issue(data,login,"login")
 check_issue(data,normal,"normal")
 check_issue(data,redirect_link,"redirect_link")
 
-with open("data_20_05.csv","w",encoding="utf8") as f:
-    writer = csv.writer(f)
-    writer.writerows(save_data)
+# with open("data_20_05.csv","w",encoding="utf8") as f:
+#     writer = csv.writer(f)
+#     writer.writerows(save_data)
